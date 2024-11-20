@@ -23,7 +23,7 @@ exports[`Pruebas en <SearchPage /> debe de mostrarse correctamente con valores p
           name="searchText"
           placeholder="Search..."
           type="text"
-          value=""
+          value="batman"
         />
         <button
           class="btn btn-outline-primary mt-1"
@@ -41,15 +41,77 @@ exports[`Pruebas en <SearchPage /> debe de mostrarse correctamente con valores p
       <hr />
       <div
         class="alert alert-primary animate__animated animate__fadeIn"
+        style="display: none;"
       >
         Search a hero
       </div>
       <div
+        aria-label="alert-danger"
         class="alert alert-danger animate__animated animate__fadeIn"
         style="display: none;"
       >
         No results found hero 
-        <p />
+        <p>
+          batman
+        </p>
+      </div>
+      <div
+        class="col animate__animated animate__fadeIn"
+      >
+        <div
+          class="card"
+        >
+          <div
+            class="row no-gutters"
+          >
+            <div
+              class="col-4"
+            >
+              <img
+                alt="Batman"
+                class="card-img"
+                src="../assets/heroes/dc-batman.jpg"
+              />
+            </div>
+            <div
+              class="col-8"
+            >
+              <div
+                class="card-body"
+              >
+                <h5
+                  class="card-title"
+                >
+                  Batman
+                </h5>
+                <p
+                  class="card-text"
+                >
+                  Bruce Wayne
+                </p>
+                <p
+                  class="card-text"
+                >
+                  <small
+                    class="text-muted"
+                  >
+                    Detective Comics #27
+                  </small>
+                </p>
+                <p
+                  class="card-text"
+                >
+                  DC Comics
+                </p>
+                <a
+                  href="/hero/dc-batman"
+                >
+                  Más...
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
